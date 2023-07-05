@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>マラソン申し込みフォーム</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="" />
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+		<h1>マラソン申し込みフォーム</h1>
+
+		<form>
+			<div>
+				<label for="lastname">性</label>
+				<input type="text" id="lastname" required />
+				<label for="firstname">名</label>
+				<input type="text" id="firstname" required />
+			</div>
+
+			<legend>参加するマラソンを選択:</legend>
+			<p>
+				<input type="radio" name="marathon" id="marathon1" value="fun" />
+				<label for="size_1">楽しく走ろう5km</label>
+			</p>
+			<p>
+				<input type="radio" name="marathon" id="marathon2" value="half" />
+				<label for="size_2">ハーフマラソン</label>
+			</p>
+			<p>
+				<input type="radio" name="marathon" id="marathon3" value="full" />
+				<label for="size_3">フルマラソン</label>
+			</p>
+
+			<div>
+				<label for="email">メールアドレス</label>
+				<input type="email" name="email" id="email" required />
+				<label for="pass">パスワード</label>
+				<input
+					type="password"
+					name="password"
+					id="pass"
+					name="password"
+					required
+				/>
+			</div>
+
+			<label for="age-select">参加する年代</label>
+
+			<select name="ages" id="age-select">
+				<option value="lessthan18" selected>-18</option>
+				<option value="18to30">18~30</option>
+				<option value="30to50">30~50</option>
+				<option value="morethan50">50+</option>
+			</select>
+			<div>
+				<input type="submit" value="登録する" />
+			</div>
+		</form>
+
+		<script src="" async defer></script>
+	</body>
+</html>
